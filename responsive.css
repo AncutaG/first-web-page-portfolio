@@ -1,0 +1,272 @@
+
+
+/* background:url(my-bg.png) no-repeat top center / 50px 50px; */
+
+body {
+ font-family: 'Istok Web', sans-serif;
+}
+
+/* SOME notes: */
+/* I created a flex box for the headers: the main one and the one for the second section */
+
+/* I know that there is encouraged mostly for a section/article to have a header too inside, I didn't choose this
+because of the way I wanted to have flex box within title section.
+I had to isolate the articles' titles inside of divss, for easier responsivness from my point of view... 
+
+I didn't find any purpose in adding another header for the first section besides the flex box one which is global practically*/
+
+.title-flex,.title-flexSec {
+  border-bottom: 2.3px solid #ccc;
+  width:100%;
+  margin:10px 5px;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.title-intro {
+  margin-left: auto; 
+  padding-top:3%;
+  color: #151f41;
+  font-size: 16px;
+}
+.title-addon {
+  margin-left: auto;
+  color: #151f41;
+  font-size: 16px;
+  margin-right:15px;
+}
+.title-name ,.title-section  {
+  flex-grow: 1;
+  color: #0d1c52;
+  font-weight:bolder;
+  line-height: 1em;
+  text-shadow: 5px 3px 10px #818799;
+}
+.title-name {
+  font-size: 27px;
+}
+.title-section {
+  font-size: 21px;
+}
+
+.firstDescription {
+  background-image:url("Romania_Carphatian_region.jpg");
+}
+.secondDescription {
+  background-image:url("Prague.jpg");
+}
+.firstDescription,.secondDescription {
+  background-size: cover;
+  background-repeat:no-repeat;
+  min-height:350px;
+  position:relative;
+  text-align:left;
+  font-size:16px;
+}
+.part-romania,.addon-R,.part-prague,.addon-P {
+  box-sizing:border-box;
+  position:absolute;
+  text-align:left;
+  line-height:24px;
+}
+.part-romania {
+  background-color:rgba(192, 196, 201, 0.502);
+  color: #182338;
+  font-weight:600;
+  top:0;
+  padding: 7px 1px 7px 10px;
+  margin:0;
+}
+ .addon-R {
+  background-color: rgba(41, 46, 0, 0.696);
+  color:white;
+  bottom:0;
+  padding: 7px 1px 7px 10px;
+  margin:0 0 10px;
+}
+.part-prague {
+  background-color: rgba(219, 221, 223, 0.5);
+  color: #101b30;
+  top:0;
+  padding: 7px 1px 7px 10px;
+  margin:0;
+  font-weight:600;
+}
+.addon-P {
+  background-color: rgba(32, 28, 2, 0.6);
+  color: #f0ebeb;
+  bottom:0;
+  padding: 4px 1px 4px 10px;
+  margin:0 0 25px;
+  /* font-size:16px; */
+}
+.nanodegree{
+  font-size:16px;
+  text-align:left;
+}
+.part-nanodegree {
+  background: #dedee4;
+  color:#18153b;
+  font-weight:600;
+  padding: 7px 10px;
+  margin:0;
+}
+.addon-N {
+  background: #c7c7d3;
+  color:#0a0725;
+  font-weight: 600;
+  padding: 6px 10px;
+  margin: 0;
+}
+.logo {
+  height:35px;
+}
+
+/*PHONE CONTENT */
+/* first FLEX wrapper */
+.wrapperIntroduction {
+  display: flex;
+  flex-flow: row wrap; 
+}
+
+/* flex sizing applied to the child elements
+flex:flex-grow, flex-shrink, flex-basis */
+.wrapperIntroduction > * {
+  flex: 1 1 100%;
+}
+.flex_containerCard,.flex_containerPort,.flex_containerOthers{
+  display:flex;
+  flex-flow:column wrap;
+  flex-grow:1;
+}
+.col {
+  flex:1 1 0;
+  align-items:center;
+}
+.pr1_description,.pr2_description,.others_description {
+  display:flex;
+  text-indent:0.8em;
+  border-bottom: 3px solid #ccc;
+  flex-direction:column;
+  color:#334265;
+  font-weight:600;
+  font-size:16px;
+}
+.ref {
+  color:#334265;
+  font-weight:600;
+  font-size:14px;
+  text-align:center;
+  line-height:24px;
+  text-shadow: 5px 3px 10px #818799;
+}
+.indent,.indent2 {
+  padding-left: 9px;
+  padding-right:2px;
+  text-align:left;
+}
+.indent {
+  background: linear-gradient(#F3E5AB,white);
+ }
+.indent2 {
+  background: linear-gradient(#B6B6B4,white);
+}
+.pr2_description {
+  background: linear-gradient(white,#DEB887);
+}
+.pr1_description {
+  background: linear-gradient(white,#F1D4A7); 
+}
+.others_description {
+  background: linear-gradient(white,#AABCA6);
+}
+.pr_pic {
+  background-size: cover;
+  background-position:center;
+  margin-left:auto;
+  margin-right:auto; 
+  width:250px;
+}
+.pr1_title,.pr2_title,.others_title {
+  text-align:center;
+  margin:2px 0;
+  color: #0d1c52;
+  font-weight: bolder;
+  line-height: 1em;
+  text-shadow: 5px 3px 10px #818799;
+  font-size:19px;
+}
+/* smaller TABLET CONTENT */
+@media all and (min-width: 540px) {
+.flex_containerCard,.flex_containerPort,.flex_containerOthers {
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  padding:0;
+ }
+}
+/* BIGGER TABLETS */
+ @media all and (min-width: 760px) {
+.pr1_description,.pr2_description,.others_description {
+  flex-direction:row;
+  }
+.pr1_description {width:60%;}
+.pr1_title {margin-right:300px;} 
+}
+/* I put a "delay" for responsive change of the first section*/
+@media all and (min-width: 620px) {
+.firstDescription {
+  order: 1;
+  flex:1 auto;
+  max-height:380px;
+  width:45%;
+}
+.part-romania,.addon-R,.part-prague,.addon-P {line-height: 28px;font-size: 16px}
+.secondDescription {order: 2; flex:1 auto;max-height:380px;width:45%;}
+.nanodegree{ order:3;flex:1 auto;font-size: 16px;}
+.title-intro {font-size: 19px;}
+}
+/* breakpoint for LAPTOP VIEW */
+@media all and (min-width: 900px) {
+/* .firstDescription { order: 1;flex:1  1 auto;}
+.secondDescription{ order: 2; flex:1 1 auto;}
+.nanodegree{order: 3; flex:1 1 auto;} */
+.firstDescription,.secondDescription {
+  min-height:400px;
+  width:40%;
+  }
+ main,header {
+  width:900px;
+  margin-left:auto;
+  margin-right:auto;
+  }
+.wrapperProjects > * {
+  padding: 15px;
+  flex: 1 1 0;
+  }
+.wrapperProjects {
+  display: flex;
+  flex-flow: row wrap;
+  align-items:flex-start;
+  justify-content:space-between;
+  }
+/* additional breakpoint according to the page's content */
+.pr1_description {width:auto;}
+.pr1_title {margin-right:0px;}
+.pr1_description,.pr2_description,.others_description {
+  flex-direction:column;
+  } 
+}
+/* bigger LAPTOPS */
+@media all and (min-width: 1450px) {
+.firstDescription {min-height:400px;width:40%;}
+.secondDescription {min-height:400px;width:40%;}
+ main,header {
+  width:1400px;
+  margin-left:auto;
+  margin-right:auto;
+  }
+.pr1_description,.pr2_description,.others_description {
+  flex-direction:row; 
+  }
+}
