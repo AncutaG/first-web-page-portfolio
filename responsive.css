@@ -156,7 +156,8 @@ flex:flex-grow, flex-shrink, flex-basis */
   font-weight:600;
   font-size:16px;
 }
-.ref ,.code{
+.ref ,
+.code {
   color:#334265;
   font-weight:600;
   font-size:14px;
@@ -219,7 +220,7 @@ flex:flex-grow, flex-shrink, flex-basis */
  }
 }
 /* BIGGER TABLETS */
- @media all and (min-width: 760px) {
+ @media all and (min-width:760px) {
 .pr1-description,
 .pr2-description,
 .others-description {
@@ -233,7 +234,7 @@ flex:flex-grow, flex-shrink, flex-basis */
   } 
 }
 /* I put a "delay" for responsive change of the first section*/
-@media all and (min-width: 620px) {
+@media all and (min-width:620px) {
 .first-description {
   order: 1;
   flex:1 auto;
@@ -272,7 +273,8 @@ flex:flex-grow, flex-shrink, flex-basis */
   min-height:400px;
   width:40%;
   }
- main,header {
+ main,
+ header {
   width:900px;
   margin-left:auto;
   margin-right:auto;
@@ -292,7 +294,7 @@ flex:flex-grow, flex-shrink, flex-basis */
   width:auto;
   }
 .pr1-title {
-  margin-right:0px;
+  margin-right:0;
   }
 .pr1-description,
 .pr2-description,
@@ -301,7 +303,7 @@ flex:flex-grow, flex-shrink, flex-basis */
   } 
 }
 /* bigger LAPTOPS */
-@media all and (min-width: 1450px) {
+@media all and (min-width:1450px) {
 .first-description,
 .second-description {
   min-height:450px;
