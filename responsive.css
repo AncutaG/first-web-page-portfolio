@@ -158,6 +158,7 @@ flex:flex-grow, flex-shrink, flex-basis */
 }
 .code {
   font-style:italic;
+  text-decoration: none;
 }
 .indent,.indent2 {
   padding-left: 9px;
