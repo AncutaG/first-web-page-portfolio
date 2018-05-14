@@ -105,6 +105,7 @@ I didn't find any purpose in adding another header for the first section besides
   margin:0;
   font-weight:600;
 }
+
 .addon-P {
   background-color: rgba(32, 28, 2, 0.6);
   color: #f0ebeb;
@@ -118,6 +119,7 @@ I didn't find any purpose in adding another header for the first section besides
   font-size:16px;
   text-align:left;
 }
+
 .part-nanodegree {
   background: #dedee4;
   color:#18153b;
