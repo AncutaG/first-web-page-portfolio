@@ -20,12 +20,14 @@ I didn't find any purpose in adding another header for the first section besides
   align-items: flex-end;
   flex-wrap: wrap;
 }
+
 .title-intro {
   margin-left: auto; 
   padding-top:3%;
   color: #151f41;
   font-size: 16px;
 }
+
 .title-addon {
   margin-left: auto;
   color: #151f41;
@@ -40,18 +42,23 @@ I didn't find any purpose in adding another header for the first section besides
   line-height: 1em;
   text-shadow: 5px 3px 10px #818799;
 }
+
 .title-name {
   font-size: 27px;
 }
+
 .title-section {
   font-size: 21px;
 }
+
 .first-description {
   background-image:url("photos/Romania_Carphatian_region.jpg");
 }
+
 .second-description {
   background-image:url("photos/Prague.jpg");
 }
+
 .first-description,
 .second-description {
   background-size: cover;
@@ -61,6 +68,7 @@ I didn't find any purpose in adding another header for the first section besides
   text-align:left;
   font-size:16px;
 }
+
 .part-romania,
 .addon-R,
 .part-prague,
@@ -70,6 +78,7 @@ I didn't find any purpose in adding another header for the first section besides
   text-align:left;
   line-height:24px;
 }
+
 .part-romania {
   background-color:rgba(192, 196, 201, 0.502);
   color: #182338;
@@ -78,6 +87,7 @@ I didn't find any purpose in adding another header for the first section besides
   padding: 7px 1px 7px 10px;
   margin:0;
 }
+
  .addon-R {
   background-color: rgba(41, 46, 0, 0.696);
   color:white;
@@ -85,6 +95,7 @@ I didn't find any purpose in adding another header for the first section besides
   padding: 7px 1px 7px 10px;
   margin:0 0 10px;
 }
+
 .part-prague {
   background-color: rgba(219, 221, 223, 0.5);
   color: #101b30;
@@ -101,6 +112,7 @@ I didn't find any purpose in adding another header for the first section besides
   margin:0 0 25px;
   /* font-size:16px; */
 }
+
 .nanodegree{
   font-size:16px;
   text-align:left;
@@ -112,6 +124,7 @@ I didn't find any purpose in adding another header for the first section besides
   padding: 7px 10px;
   margin:0;
 }
+
 .addon-N {
   background: #c7c7d3;
   color:#0a0725;
@@ -119,6 +132,7 @@ I didn't find any purpose in adding another header for the first section besides
   padding: 6px 10px;
   margin: 0;
 }
+
 .logo {
   height:35px;
 }
@@ -129,11 +143,13 @@ I didn't find any purpose in adding another header for the first section besides
   display: flex;
   flex-flow: row wrap; 
 }
+
 /* flex sizing applied to the child elements
 flex:flex-grow, flex-shrink, flex-basis */
 .wrapper-introduction > * {
   flex: 1 1 100%;
 }
+
 .flex-container-card,
 .flex-container-port,
 .flex-container-others{
@@ -141,10 +157,12 @@ flex:flex-grow, flex-shrink, flex-basis */
   flex-flow:column wrap;
   flex-grow:1;
 }
+
 .col {
   flex:1 1 0;
   align-items:center;
 }
+
 .pr1-description,
 .pr2-description,
 .others-description {
@@ -156,6 +174,7 @@ flex:flex-grow, flex-shrink, flex-basis */
   font-weight:600;
   font-size:16px;
 }
+
 .ref ,
 .code {
   color:#334265;
@@ -165,31 +184,39 @@ flex:flex-grow, flex-shrink, flex-basis */
   line-height:24px;
   text-shadow: 5px 3px 10px #818799;
 }
+
 .code {
   font-style:italic;
   text-decoration:none;
 }
+
 .indent,
 .indent2 {
   padding-left: 9px;
   padding-right:2px;
   text-align:left;
 }
+
 .indent {
   background: linear-gradient(#F3E5AB,white);
  }
+
 .indent2 {
   background: linear-gradient(#B6B6B4,white);
 }
+
 .pr2-description {
   background: linear-gradient(white,#DEB887);
 }
+
 .pr1-description {
   background: linear-gradient(white,#F1D4A7); 
 }
+
 .others-description {
   background: linear-gradient(white,#AABCA6);
 }
+
 .pr-pic {
   background-size: cover;
   background-position:center;
@@ -197,6 +224,7 @@ flex:flex-grow, flex-shrink, flex-basis */
   margin-right:auto; 
   width:250px;
 }
+
 .pr1-title,
 .pr2-title,
 .others-title {
@@ -208,6 +236,7 @@ flex:flex-grow, flex-shrink, flex-basis */
   text-shadow: 5px 3px 10px #818799;
   font-size:19px;
 }
+
 /* smaller TABLET CONTENT */
 @media all and (min-width: 540px) {
 .flex-container-card,
@@ -219,6 +248,7 @@ flex:flex-grow, flex-shrink, flex-basis */
   padding:0;
  }
 }
+
 /* BIGGER TABLETS */
  @media all and (min-width:760px) {
 .pr1-description,
@@ -226,13 +256,16 @@ flex:flex-grow, flex-shrink, flex-basis */
 .others-description {
   flex-direction:row;
   }
+  
 .pr1-description {
   width:60%;
   }
+  
 .pr1-title {
   margin-right:300px;
   } 
 }
+
 /* I put a "delay" for responsive change of the first section*/
 @media all and (min-width:620px) {
 .first-description {
@@ -248,21 +281,25 @@ flex:flex-grow, flex-shrink, flex-basis */
   line-height: 28px;
   font-size: 16px
   }
+ 
 .second-description {
   order: 2; 
   flex:1 auto;
   max-height:380px;
   width:45%;
   }
+ 
 .nanodegree { 
   order:3;
   flex:1 auto;
   font-size: 16px;
   }
+ 
 .title-intro {
   font-size:19px;
   }
 }
+
 /* breakpoint for LAPTOP VIEW */
 @media all and (min-width: 900px) {
 /* .firstDescription { order: 1;flex:1  1 auto;}
@@ -273,35 +310,42 @@ flex:flex-grow, flex-shrink, flex-basis */
   min-height:400px;
   width:40%;
   }
+ 
  main,
  header {
   width:900px;
   margin-left:auto;
   margin-right:auto;
   }
+ 
 .wrapper-projects > * {
   padding: 15px;
   flex: 1 1 0;
   }
+ 
 .wrapper-projects {
   display: flex;
   flex-flow: row wrap;
   align-items:flex-start;
   justify-content:space-between;
   }
+ 
 /* additional breakpoint according to the page's content */
 .pr1-description {
   width:auto;
   }
+ 
 .pr1-title {
   margin-right:0;
   }
+ 
 .pr1-description,
 .pr2-description,
 .others-description {
   flex-direction:column;
   } 
 }
+
 /* bigger LAPTOPS */
 @media all and (min-width:1450px) {
 .first-description,
@@ -309,12 +353,14 @@ flex:flex-grow, flex-shrink, flex-basis */
   min-height:450px;
   width:40%;
   }
+ 
  main,
  header {
   width:1400px;
   margin-left:auto;
   margin-right:auto;
   }
+ 
 .pr1-description,
 .pr2-description,
 .others-description {
