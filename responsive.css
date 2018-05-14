@@ -255,8 +255,8 @@ flex:flex-grow, flex-shrink, flex-basis */
 }
 /* bigger LAPTOPS */
 @media all and (min-width: 1450px) {
-.firstDescription {min-height:400px;width:40%;}
-.secondDescription {min-height:400px;width:40%;}
+.firstDescription {min-height:420px;width:40%;}
+.secondDescription {min-height:420px;width:40%;}
  main,header {
   width:1400px;
   margin-left:auto;
