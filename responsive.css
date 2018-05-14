@@ -32,7 +32,8 @@ I didn't find any purpose in adding another header for the first section besides
   font-size: 16px;
   margin-right:15px;
 }
-.title-name ,.title-section  {
+.title-name ,
+.title-section {
   flex-grow: 1;
   color: #0d1c52;
   font-weight:bolder;
@@ -60,7 +61,10 @@ I didn't find any purpose in adding another header for the first section besides
   text-align:left;
   font-size:16px;
 }
-.part-romania,.addon-R,.part-prague,.addon-P {
+.part-romania,
+.addon-R,
+.part-prague,
+.addon-P {
   box-sizing:border-box;
   position:absolute;
   text-align:left;
@@ -141,7 +145,9 @@ flex:flex-grow, flex-shrink, flex-basis */
   flex:1 1 0;
   align-items:center;
 }
-.pr1-description,.pr2-description,.others-description {
+.pr1-description,
+.pr2-description,
+.others-description {
   display:flex;
   text-indent:0.8em;
   border-bottom: 3px solid #ccc;
@@ -275,7 +281,7 @@ flex:flex-grow, flex-shrink, flex-basis */
   padding: 15px;
   flex: 1 1 0;
   }
-.wrapperProjects {
+.wrapper-projects {
   display: flex;
   flex-flow: row wrap;
   align-items:flex-start;
@@ -301,7 +307,8 @@ flex:flex-grow, flex-shrink, flex-basis */
   min-height:450px;
   width:40%;
   }
- main,header {
+ main,
+ header {
   width:1400px;
   margin-left:auto;
   margin-right:auto;
