@@ -148,13 +148,16 @@ flex:flex-grow, flex-shrink, flex-basis */
   font-weight:600;
   font-size:16px;
 }
-.ref {
+.ref ,.code{
   color:#334265;
   font-weight:600;
   font-size:14px;
-  text-align:center;
+  text-align:left;
   line-height:24px;
   text-shadow: 5px 3px 10px #818799;
+}
+.code {
+  font-style:italic;
 }
 .indent,.indent2 {
   padding-left: 9px;
