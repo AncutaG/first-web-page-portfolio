@@ -11,7 +11,8 @@ I had to isolate the articles' titles inside of divss, for easier responsivness 
 
 I didn't find any purpose in adding another header for the first section besides the flex box one which is global practically*/
 
-.title-flex,.title-flexSec {
+.title-flex,
+.title-flex-sec {
   border-bottom: 2.3px solid #ccc;
   width:100%;
   margin:10px 5px;
@@ -44,13 +45,14 @@ I didn't find any purpose in adding another header for the first section besides
 .title-section {
   font-size: 21px;
 }
-.firstDescription {
+.first-description {
   background-image:url("photos/Romania_Carphatian_region.jpg");
 }
-.secondDescription {
+.second-description {
   background-image:url("photos/Prague.jpg");
 }
-.firstDescription,.secondDescription {
+.first-description,
+.second-description {
   background-size: cover;
   background-repeat:no-repeat;
   min-height:350px;
@@ -119,16 +121,18 @@ I didn't find any purpose in adding another header for the first section besides
 
 /*PHONE CONTENT */
 /* first FLEX wrapper */
-.wrapperIntroduction {
+.wrapper-introduction {
   display: flex;
   flex-flow: row wrap; 
 }
 /* flex sizing applied to the child elements
 flex:flex-grow, flex-shrink, flex-basis */
-.wrapperIntroduction > * {
+.wrapper-introduction > * {
   flex: 1 1 100%;
 }
-.flex_containerCard,.flex_containerPort,.flex_containerOthers{
+.flex-container-card,
+.flex-container-port,
+.flex-container-others{
   display:flex;
   flex-flow:column wrap;
   flex-grow:1;
@@ -137,7 +141,7 @@ flex:flex-grow, flex-shrink, flex-basis */
   flex:1 1 0;
   align-items:center;
 }
-.pr1_description,.pr2_description,.others_description {
+.pr1-description,.pr2-description,.others-description {
   display:flex;
   text-indent:0.8em;
   border-bottom: 3px solid #ccc;
@@ -158,7 +162,8 @@ flex:flex-grow, flex-shrink, flex-basis */
   font-style:italic;
   text-decoration:none;
 }
-.indent,.indent2 {
+.indent,
+.indent2 {
   padding-left: 9px;
   padding-right:2px;
   text-align:left;
@@ -169,23 +174,25 @@ flex:flex-grow, flex-shrink, flex-basis */
 .indent2 {
   background: linear-gradient(#B6B6B4,white);
 }
-.pr2_description {
+.pr2-description {
   background: linear-gradient(white,#DEB887);
 }
-.pr1_description {
+.pr1-description {
   background: linear-gradient(white,#F1D4A7); 
 }
-.others_description {
+.others-description {
   background: linear-gradient(white,#AABCA6);
 }
-.pr_pic {
+.pr-pic {
   background-size: cover;
   background-position:center;
   margin-left:auto;
   margin-right:auto; 
   width:250px;
 }
-.pr1_title,.pr2_title,.others_title {
+.pr1-title,
+.pr2-title,
+.others-title {
   text-align:center;
   margin:2px 0;
   color: #0d1c52;
@@ -196,7 +203,9 @@ flex:flex-grow, flex-shrink, flex-basis */
 }
 /* smaller TABLET CONTENT */
 @media all and (min-width: 540px) {
-.flex_containerCard,.flex_containerPort,.flex_containerOthers {
+.flex-container-card,
+.flex-container-port,
+.flex-container-others {
   display:flex;
   flex-direction: row;
   align-items:center;
@@ -205,31 +214,55 @@ flex:flex-grow, flex-shrink, flex-basis */
 }
 /* BIGGER TABLETS */
  @media all and (min-width: 760px) {
-.pr1_description,.pr2_description,.others_description {
+.pr1-description,
+.pr2-description,
+.others-description {
   flex-direction:row;
   }
-.pr1_description {width:60%;}
-.pr1_title {margin-right:300px;} 
+.pr1-description {
+  width:60%;
+  }
+.pr1-title {
+  margin-right:300px;
+  } 
 }
 /* I put a "delay" for responsive change of the first section*/
 @media all and (min-width: 620px) {
-.firstDescription {
+.first-description {
   order: 1;
   flex:1 auto;
   max-height:380px;
   width:45%;
-}
-.part-romania,.addon-R,.part-prague,.addon-P {line-height: 28px;font-size: 16px}
-.secondDescription {order: 2; flex:1 auto;max-height:380px;width:45%;}
-.nanodegree{ order:3;flex:1 auto;font-size: 16px;}
-.title-intro {font-size: 19px;}
+  }
+.part-romania,
+.addon-R,
+.part-prague,
+.addon-P {
+  line-height: 28px;
+  font-size: 16px
+  }
+.second-description {
+  order: 2; 
+  flex:1 auto;
+  max-height:380px;
+  width:45%;
+  }
+.nanodegree { 
+  order:3;
+  flex:1 auto;
+  font-size: 16px;
+  }
+.title-intro {
+  font-size:19px;
+  }
 }
 /* breakpoint for LAPTOP VIEW */
 @media all and (min-width: 900px) {
 /* .firstDescription { order: 1;flex:1  1 auto;}
 .secondDescription{ order: 2; flex:1 1 auto;}
 .nanodegree{order: 3; flex:1 1 auto;} */
-.firstDescription,.secondDescription {
+.first-description,
+.second-description {
   min-height:400px;
   width:40%;
   }
@@ -238,7 +271,7 @@ flex:flex-grow, flex-shrink, flex-basis */
   margin-left:auto;
   margin-right:auto;
   }
-.wrapperProjects > * {
+.wrapper-projects > * {
   padding: 15px;
   flex: 1 1 0;
   }
@@ -249,9 +282,15 @@ flex:flex-grow, flex-shrink, flex-basis */
   justify-content:space-between;
   }
 /* additional breakpoint according to the page's content */
-.pr1_description {width:auto;}
-.pr1_title {margin-right:0px;}
-.pr1_description,.pr2_description,.others_description {
+.pr1-description {
+  width:auto;
+  }
+.pr1-title {
+  margin-right:0px;
+  }
+.pr1-description,
+.pr2-description,
+.others-description {
   flex-direction:column;
   } 
 }
@@ -266,7 +305,9 @@ flex:flex-grow, flex-shrink, flex-basis */
   margin-left:auto;
   margin-right:auto;
   }
-.pr1_description,.pr2_description,.others_description {
+.pr1-description,
+.pr2-description,
+.others-description {
   flex-direction:row; 
   }
 }
