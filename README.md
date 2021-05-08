@@ -8,7 +8,7 @@ The project should meet some specifications, te so called "required elements" su
 * a logo
 
 I wanted to add here some of the main resources that helped me (besides the Udacity course) in order to understand flex-box concept and be able to actually play with it for real.
-One ca go and explore ![here] https://github.com/afonsopacifer/awesome-flexbox].
+One ca go and explore [here](https://github.com/afonsopacifer/awesome-flexbox).
  
 
 
